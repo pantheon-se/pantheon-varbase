@@ -1,22 +1,19 @@
-# Composer-enabled Drupal template
+# Varbase Project Template for Pantheon
 
-This is Pantheon's recommended starting point for forking new [Drupal](https://www.drupal.org/) upstreams
-that work with the Platform's Integrated Composer build process. It is also the
-Platform's standard Drupal 9 upstream.
+This project provides a starter kit for Varbase 9.0.x projects hosted on [Pantheon](https://pantheon.io). It
+is very closely based on the [Varbase Composer project](https://github.com/Vardot/varbase-project).
 
-Unlike with earlier Pantheon upstreams, files such as Drupal Core that you are
-unlikely to adjust while building sites are not in the main branch of the 
-repository. Instead, they are referenced as dependencies that are installed by
-Composer.
+This template builds Drupal 8 using the "Drupal Recommended" Composer project. It also includes configuration to use Redis for caching.
 
-For more information and detailed installation guides, please visit the
-Integrated Composer Pantheon documentation: https://pantheon.io/docs/integrated-composer
+Drupal is a flexible and extensible PHP-based CMS framework.
 
-## Contributing
+## Services
 
-Contributions are welcome in the form of GitHub pull requests. However, the
-`pantheon-upstreams/drupal-recommended` repository is a mirror that does not
-directly accept pull requests.
+- PHP 8.0
+- MariaDB 10.4
 
-Instead, to propose a change, please fork [pantheon-systems/drupal-recommended](https://github.com/pantheon-systems/drupal-recommended)
-and submit a PR to that repository.
+### About Pantheon
+
+This template has been specifically designed to deploy on Pantheon.io.
+
+`@todo`

@@ -87,6 +87,10 @@
 # already ignored. We must also ignore these generated files.
 /web/**/.gitignore
 
+# Varbase specific
+/bin
+/web/sites/*/services.yml
+
 
 # Other common rules
 # ------------------
