@@ -32,3 +32,16 @@ $local_settings = __DIR__ . "/settings.local.php";
 if (file_exists($local_settings)) {
   include $local_settings;
 }
+
+/**
+ * Change memory limit on installation.
+ * 
+ * This logic could be removed after the installation is complete.
+ */
+if (PHP_SAPI !== 'cli') {
+  if (defined('MAINTENANCE_MODE') && constant('MAINTENANCE_MODE') === 'install')
+    ini_set('memory_limit', '2048M');
+  else {
+    ini_set('memory_limit', '256M');
+  }
+}
